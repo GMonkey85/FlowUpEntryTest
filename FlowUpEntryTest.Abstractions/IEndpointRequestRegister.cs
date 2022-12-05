@@ -7,6 +7,6 @@
         public int[] GetRequestsCountsWithinInterval(string endpointName,
             DateTime from,
             DateTime to,
-            double intervalMinutes);
+            long intervalMinutes);
     }
 }

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PseudoUnitTests", "PseudoUn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlowUpEntryTest.Utils", "FlowUpEntryTest.Utils\FlowUpEntryTest.Utils.csproj", "{3771BC25-837A-43CA-B39C-292D76C0874F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndToEndTests", "EndToEndTests\EndToEndTests.csproj", "{B004F1E2-BF40-4603-BC02-4B79D34C7E6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,8 +40,13 @@ Global
 		{3771BC25-837A-43CA-B39C-292D76C0874F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3771BC25-837A-43CA-B39C-292D76C0874F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3771BC25-837A-43CA-B39C-292D76C0874F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B004F1E2-BF40-4603-BC02-4B79D34C7E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B004F1E2-BF40-4603-BC02-4B79D34C7E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B004F1E2-BF40-4603-BC02-4B79D34C7E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B004F1E2-BF40-4603-BC02-4B79D34C7E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A08E1123-0435-4699-A901-37F293EFBFCA} = {DD80BA9E-3B77-494C-8AED-7ECBD2830798}
+		{B004F1E2-BF40-4603-BC02-4B79D34C7E6C} = {DD80BA9E-3B77-494C-8AED-7ECBD2830798}
 	EndGlobalSection
 EndGlobal

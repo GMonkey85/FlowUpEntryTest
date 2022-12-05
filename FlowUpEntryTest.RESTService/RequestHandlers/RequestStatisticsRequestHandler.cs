@@ -97,7 +97,7 @@ public class RequestStatisticsRequestHandler : IRequestStatisticsRequestHandler
 
     private static DateTime ParseTimestampParameter(string parameterName, IQueryCollection query)
     {
-        if (!double.TryParse(query[parameterName], out var unixTimestamp)
+        if (!long.TryParse(query[parameterName], out var unixTimestamp)
             || unixTimestamp < 0)
         {
             throw new BadHttpRequestException($"Parameter '{parameterName}' must be valid UNIX timestamp.");
@@ -106,12 +106,12 @@ public class RequestStatisticsRequestHandler : IRequestStatisticsRequestHandler
         return DateTime.UnixEpoch.AddSeconds(unixTimestamp);
     }
 
-    private static double ParseTimestampIntervalParameter(string parameterName, IQueryCollection query)
+    private static long ParseTimestampIntervalParameter(string parameterName, IQueryCollection query)
     {
-        if (!double.TryParse(query["interval"], out var intervalMinutes)
+        if (!long.TryParse(query["interval"], out var intervalMinutes)
             || intervalMinutes < 1)
         {
-            throw new BadHttpRequestException($"Parameter '{parameterName}' must decimal number (double) > 1.");
+            throw new BadHttpRequestException($"Parameter '{parameterName}' must decimal number (long) > 1.");
         }
 
         return intervalMinutes;

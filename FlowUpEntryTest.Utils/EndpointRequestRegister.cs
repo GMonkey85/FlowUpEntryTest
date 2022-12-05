@@ -23,7 +23,7 @@ namespace Utils
         public int[] GetRequestsCountsWithinInterval(string endpointName,
             DateTime from,
             DateTime to,
-            double intervalMinutes)
+            long intervalMinutes)
         {
             var intervalTicks = intervalMinutes * TimeSpan.TicksPerMinute;
             //for manual testing: intervalTicks = intervalMinutes / 12;   //shorten debug interval to 5s instead of 1 minute
