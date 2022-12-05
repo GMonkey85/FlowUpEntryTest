@@ -1,6 +1,6 @@
 # FlowUpEntryTest
 
-This repository contains implementation of https://gist.github.com/vmasek/ae519af99cd33210661aa16981ef72c7, hopefully with acceptable behavior.
+This repository contains implementation of https://gist.github.com/vmasek/ae519af99cd33210661aa16981ef72c7, hopefully in acceptable state.
 
 ## Build info
 Projects from this repository are targeted to net7.0.
