@@ -3,7 +3,7 @@
 This repository contains implementation of https://gist.github.com/vmasek/ae519af99cd33210661aa16981ef72c7, hopefully with acceptable behavior.
 
 ## Build info
-Projects from this repository are targetted to net7.0.
+Projects from this repository are targeted to net7.0.
 
 ## Implementation notes
 
